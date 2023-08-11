@@ -1,0 +1,7 @@
+{
+    "apssid"    : "AFIN-DDS9833",
+    "appsk"     : "12345678",
+    "stassid"   : "NAME",
+    "stapsk"    : "12345678",  
+    "host"      : "afin-dds9833" 
+}

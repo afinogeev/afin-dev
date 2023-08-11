@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/ext/bootstrap.min.css"/>
+
+</head>
+<body >
+
+  <!-- HTML -->
+
+  <div data-include="menu.htm"></div>
+
+  <main class="flex-shrink-0 pt-4 pb-2 mb-2" id="main">
+		<div class="container mt-5 text-break">
+
+      <h4>NETWORK&nbsp;CONFIG</h4>
+        
+      <div class="row p-2 justify-content-center">  
+      <table >
+        <tr>
+          <td>
+            <span class="float-right p-2 text-nowrap">APSSID</div>
+          </td>
+          <td>
+            <span class="col p-2 col text-nowrap flex-shrink-0"><input type="text" id="apssid"/></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="float-right p-2 text-nowrap">APPSK</span>
+          </td>
+          <td>
+            <span class="col p-2 col text-nowrap flex-shrink-0"><input type="text" id="appsk"/></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="float-right p-2 text-nowrap">STASSID</span>
+          </td>
+          <td>
+            <span class="col p-2 col text-nowrap flex-shrink-0"><input type="text" id="stassid"/></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="float-right p-2 text-nowrap">STAPSK</span>
+          </td>
+          <td>
+            <span class="col p-2 col text-nowrap flex-shrink-0"><input type="text" id="stapsk"/></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="float-right p-2 text-nowrap">HOST</span>
+          </td>
+          <td>
+            <span class="col p-2 col text-nowrap flex-shrink-0"><input type="text " id="host"/>.local</span>
+          </td>
+        </tr>
+      </table>
+      </div>
+
+      <div class="row p-2 justify-content-center">
+        <button id="saveButton" type="button" class="btn btn-success btn-lg btn-block">SAVE</button>
+      </div>
+
+      <div class="row p-2 justify-content-center">
+        <button id="restartButton" type="button" class="btn btn-danger btn-lg btn-block" onclick="location.href='./restart'">RESTART</button>
+      </div>
+
+      <div class="row p-2 justify-content-center">
+        <button id="mainButton" type="button" class="btn btn-dark btn-lg btn-block" onclick="location.href='/'">GO TO MAIN</button>
+      </div>
+
+		</div>
+	</main>
+
+  <!-- SCRIPTS -->
+
+  <script src="js/ext/jquery.min.js"></script> 
+  <script src="js/ext/bootstrap.min.js"></script>
+  <script src="js/ext/csi.min.js"></script>
+
+  <script type="module" src="js/network.js"></script>
+
+</html>

@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/ext/bootstrap.min.css"/>
+
+</head>
+<body >
+  
+  <!-- HTML -->
+
+  <div data-include="menu.htm"></div>
+
+  <main class="flex-shrink-0 pt-4 pb-2 mb-2" id="main">
+		<div class="container mt-5 text-break">
+
+      <h4>CLK5351</h4>
+        
+      <div class="col p-2 justify-content-center">
+
+        <table >
+          <tr>
+            <td>
+              <span class="float-right p-2 text-nowrap">OUTPUT</div>
+            </td>
+            <td>
+              <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                <select class="col p-2" name="outputs" id="output">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="float-right p-2 text-nowrap">FREQ</span>
+            </td>
+            <td>
+              <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                <input class="col p-2 col text-nowrap flex-shrink-0" id="freqM" type="number" min="0" max="999" value="0" step="1">M&nbsp;</input>
+                <input class="col p-2 col text-nowrap flex-shrink-0" id="freqK" type="number" min="0" max="999" value="0" step="1">K&nbsp;</input>
+                <input class="col p-2 col text-nowrap flex-shrink-0" id="freq" type="number" min="0" max="999.9" value="0" step="0.1">Hz</input>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="float-right p-2 text-nowrap">PHASE</span>
+            </td>
+            <td>
+              <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                <input class="col p-2 col text-nowrap flex-shrink-0" id="phase" type="number" min="0" max="100" value="0" step="0.1">%</input>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="float-right p-2 text-nowrap">ENABLE</span>
+            </td>
+            <td>
+              <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                <input type="checkbox" id="enable" checked>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="float-right p-2 text-nowrap">INVERT</span>
+            </td>
+            <td>
+              <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                <input type="checkbox" id="invert">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="float-right p-2 text-nowrap">CURRENT</div>
+            </td>
+            <td>
+              <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                <select class="col p-2" name="idrives" id="idrive">
+                  <option value="2">2</option>
+                  <option value="4">4</option>
+                  <option value="6">6</option>
+                  <option value="8">8</option>
+                </select>
+                mA
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="row p-2 justify-content-center">
+        <button id="setButton" type="button" class="btn btn-success btn-lg btn-block">SET</button>
+      </div>
+
+    </div>
+
+
+	</main> 
+
+  <!-- SCRIPTS -->
+  
+  <script src="js/ext/jquery.min.js"></script> 
+  <script src="js/ext/bootstrap.min.js"></script>
+  <script src="js/ext/csi.min.js"></script>
+
+  <script src="js/index.js"></script>
+
+</html>

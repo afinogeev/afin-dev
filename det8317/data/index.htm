@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/ext/bootstrap.min.css"/>
+
+</head>
+<body >
+  
+  <!-- HTML -->
+
+  <div data-include="menu.htm"></div>
+
+  <main class="flex-shrink-0 pt-4 pb-2 mb-2" id="main">
+		<div class="container mt-5 text-break">
+
+      <h4>DET8317</h4>
+        
+      <div class="col p-2 justify-content-center">
+
+        <div class="row p-2 justify-content-center">
+          <table >
+            <tr>
+              <td>
+                <span class="float-right p-2 text-nowrap">POWER</span>
+              </td>
+              <td>
+                <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                  <h1 class="text-success" id="analogValue">0</h1>
+                  <span>&nbsp;dBm</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="float-right p-2 text-nowrap">FREQ</span>
+              </td>
+              <td>
+                <div class="float-left p-2 d-flex justify-content-center align-items-center">
+                  <input class="col p-2 col text-nowrap flex-shrink-0" id="freq" type="number" min="0" max="10000" value="0" step="1">MHz&nbsp;</input>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div> 
+
+        <div class="row p-2 justify-content-center">
+          <button id="setButton" type="button" class="btn btn-success btn-lg btn-block">SET FREQ</button>
+        </div>
+
+        <div class="p-2 h-50" id="charts">
+          <div class="chart-container" style="position: relative; height:100%;"><canvas id="analog"></canvas></div>
+        </div>
+
+        <div class="row p-2" id="config">
+
+          <div class="col p-2 justify-content-center">
+            <button id="startPauseButton" type="button" class="btn btn-warning btn-lg btn-block">PAUSE</button>
+          </div>
+
+          <div class="col p-2 justify-content-center">
+            <button id="clearButton" disabled="true" type="button" class="btn btn-danger btn-lg btn-block">CLEAR</button>
+          </div>
+
+        </div>
+
+        
+
+      </div>
+
+    </div>
+
+
+	</main> 
+
+  <!-- SCRIPTS -->
+  
+  <script src="js/ext/chart/Chart.js"></script>
+  <script src="js/ext/chart/hammer.js"></script>
+  <script src="js/ext/chart/chartjs-plugin-zoom.js"></script> 
+  <script src="js/ext/jquery.min.js"></script> 
+  <script src="js/ext/bootstrap.min.js"></script>
+  <script src="js/ext/csi.min.js"></script>
+
+  <script src="js/index.js"></script>
+
+</html>

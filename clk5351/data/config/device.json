@@ -1,0 +1,26 @@
+{
+    "calibr"    : "0",
+    "output"    : [
+        {
+            "freq"      : "1000000",
+            "phase"     : "0",
+            "enable"    : "1",
+            "invert"    : "0",
+            "idrive"    : "2"
+        },
+        {
+            "freq"      : "1000000",
+            "phase"     : "0",
+            "enable"    : "1",
+            "invert"    : "0",
+            "idrive"    : "2"
+        },
+        {
+            "freq"      : "1000000",
+            "phase"     : "0",
+            "enable"    : "1",
+            "invert"    : "0",
+            "idrive"    : "2"
+        }
+    ]
+}
